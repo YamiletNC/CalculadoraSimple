@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Calculadora simple</title>
+
+    <script>
+        function btnSumar()
+        {
+            var v1 = document.getElementById("valor1").value;
+            var v2 = document.getElementById("valor2").value;
+            var s = parseInt(v1) + parseInt(v2);
+            //alert("Suma=" + s);
+
+            document.getElementById("Resultado").value = s;
+        }
+        function btnRestar()
+        {
+            var v1 = document.getElementById("valor1").value;
+            var v2 = document.getElementById("valor2").value;
+            var s = parseInt(v1) - parseInt(v2);
+
+            document.getElementById("Resultado").value = s;
+        }
+        function btnMulti()
+        {
+            var v1 = document.getElementById("valor1").value;
+            var v2 = document.getElementById("valor2").value;
+            var s = parseInt(v1) * parseInt(v2);
+
+            document.getElementById("Resultado").value = s;
+        }
+        function btnDividir()
+        {
+            var v1 = document.getElementById("valor1").value;
+            var v2 = document.getElementById("valor2").value;
+            var s = parseInt(v1) / parseInt(v2);
+
+            document.getElementById("Resultado").value = s;
+        }
+    </script>
+</head>
+
+<body>
+
+     <center>
+        <font face="georgia">
+            <font color="#FA0FA0">
+        <h1>Calculadora Simple</h1>
+    </font>
+    </font>
+    </center>
+         <font size="1">
+        <h1>Ejemplo de una calculadora simple con Yamilet Navarrete :)</h1>
+    </font>
+        <br>
+
+        <form>
+                <input type="text" id="Resultado" value="0" >
+
+                <label for="text-basic">Valor 1:</label>
+                <input type="number" name="valor1" id="valor1" value="">
+
+                <label for="text-basic">Valor 2:</label>
+                <input type="number" name="valor2" id="valor2" value="">
+
+                <input type="button" value="Sumar" onclick="btnSumar();" data-inline="true" >
+                <input type="button" value="Restar" onclick="btnRestar();" data-inline="true" >
+                <input type="button" value="Multiplicar" onclick="btnMulti();" data-inline="true">
+                <input type="button" value="Dividir" onclick="btnDividir();" data-inline="true">
+                
+        </form>
+
+</body>
+
+</html>
